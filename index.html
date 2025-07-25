@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ZemiMod – A Rocket League mod used by over 1000 players. Stealth tools, boost timers, and full BakkesMod compatibility." />
+  <meta name="color-scheme" content="dark light" />
+
+  <meta property="og:title" content="ZemiMod – Rocket League Mod">
+  <meta property="og:description" content="A powerful Rocket League mod made by a 14-year-old developer. Used by over 1000 members.">
+  <meta property="og:image" content="images/feature1.png">
+  <meta property="og:url" content="https://zemimodsite.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>ZemiMod – Rocket League Mod</title>
+  <link rel="icon" href="ZemiMod.ico" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    .modal-bg {
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(4px);
+    }
+    [data-aos] {
+      opacity: 0;
+      transition-property: opacity, transform;
+    }
+  </style>
+</head>
+
+<body class="font-sans leading-relaxed">
+
+  <!-- Hero -->
+  <header class="min-h-screen flex flex-col items-center justify-center text-center px-6" data-aos="fade-down" data-aos-duration="1200">
+    <h1 class="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent drop-shadow">
+      ZemiMod
+    </h1>
+    <p class="text-lg sm:text-xl mt-4 text-gray-300 max-w-xl">
+      Rocket League’s Most Customizable Mod — created by a passionate 14-year-old modder and used by over <strong>1,000+</strong> players.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-4 justify-center">
+      <a href="ZemiMod.dll" download class="transform bg-gradient-to-r from-cyan-500 to-pink-500 px-6 py-3 rounded-lg font-bold hover:scale-105 transition duration-300 ease-in-out shadow-lg">
+        Download Mod
+      </a>
+      <a href="ZemiInjector.zip" download class="transform bg-gray-800 px-6 py-3 rounded-lg border border-cyan-500 hover:bg-cyan-700 transition duration-300 ease-in-out shadow">
+        Download Injector
+      </a>
+      <button id="openSetupGuide" class="transform bg-gray-800 px-6 py-3 rounded-lg border border-pink-500 hover:bg-pink-700 transition duration-300 ease-in-out shadow">
+        Setup Guide
+      </button>
+    </div>
+
+    <a href="https://discord.gg/gEt3eJzgVs" target="_blank" class="mt-6 inline-block text-cyan-400 hover:text-pink-400 transition underline">
+      Join our Discord
+    </a>
+  </header>
+
+  <!-- About Us -->
+  <section class="px-8 py-16 bg-gray-800 max-w-4xl mx-auto rounded-xl my-12" data-aos="fade-right" data-aos-duration="1200">
+    <h2 class="text-3xl font-bold mb-6 text-cyan-400 text-center">About Us</h2>
+    <p class="text-gray-300 leading-relaxed text-center text-lg">
+      Hey! I’m Zemi, a 14-year-old modder passionate about Rocket League and creating cool mods to enhance the gameplay experience.
+      ZemiMod is my personal project to bring quality, safe, and customizable mods to the community.
+      It's now used by over <strong>1,000 players</strong> and growing daily.
+    </p>
+  </section>
+
+  <!-- Showcase -->
+  <section class="px-8 py-16 bg-gray-900 text-center" data-aos="fade-left" data-aos-duration="1200">
+    <h2 class="text-3xl font-bold mb-8">Screenshots</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <img src="images/feature1.png" alt="In-game ZemiMod UI preview" class="rounded-lg shadow-lg w-full object-cover" />
+      <img src="images/feature2.png" alt="Stealth mode active" class="rounded-lg shadow-lg w-full object-cover" />
+      <img src="images/feature3.png" alt="Boost tracker in action" class="rounded-lg shadow-lg w-full object-cover" />
+    </div>
+  </section>
+
+  <!-- Features -->
+  <main class="px-8 py-16 bg-gray-800 text-center" data-aos="fade-up" data-aos-duration="1200">
+    <h2 class="text-3xl font-bold mb-10 text-pink-400">🔥 Features</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left max-w-6xl mx-auto">
+      <article class="bg-gray-700 p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-xl font-bold mb-2 text-cyan-400">Online Functions</h3>
+        <p>All features and modules work in online matches.</p>
+      </article>
+      <article class="bg-gray-700 p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-xl font-bold mb-2 text-pink-400">Stealth Mode</h3>
+        <p>Hide cars, trails, boost, shadows, or names when low on boost.</p>
+      </article>
+      <article class="bg-gray-700 p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-xl font-bold mb-2 text-cyan-400">Boost Timer</h3>
+        <p>Track big boost pad respawns and opponent boost levels.</p>
+      </article>
+      <article class="bg-gray-700 p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="400">
+        <h3 class="text-xl font-bold mb-2 text-pink-400">Custom UI</h3>
+        <p>Built-in toggle menu with options for every feature.</p>
+      </article>
+      <article class="bg-gray-700 p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="500">
+        <h3 class="text-xl font-bold mb-2 text-cyan-400">BakkesMod Compatible</h3>
+        <p>Fully supports BakkesMod plugins and overlays.</p>
+      </article>
+      <article class="bg-gray-700 p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="600">
+        <h3 class="text-xl font-bold mb-2 text-pink-400">Lightweight</h3>
+        <p>Fast performance with zero online detection risk (offline only).</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-gray-500 bg-gray-950 text-sm">
+    &copy; 2025 ZemiMod. Not affiliated with Psyonix or Epic Games.
+  </footer>
+
+  <!-- Setup Guide Modal -->
+  <div id="setupModal" class="fixed inset-0 flex items-center justify-center hidden modal-bg z-50" role="dialog" aria-modal="true" aria-labelledby="setup-guide-title">
+    <div class="bg-gray-900 rounded-xl max-w-lg p-8 mx-4 relative shadow-xl text-left" data-aos="zoom-in" data-aos-duration="500">
+      <button id="closeSetupGuide" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl font-bold" aria-label="Close Setup Guide">&times;</button>
+      <h3 id="setup-guide-title" class="text-2xl font-bold mb-4 text-cyan-400">Setup Guide</h3>
+      <p class="mb-4">Follow these steps to get ZemiMod up and running:</p>
+      <ol class="list-decimal list-inside space-y-2 text-gray-300">
+        <li><strong>Download both <code>ZemiMod.dll</code> and <code>ZemiInjector.zip</code>.</strong></li>
+        <li>Extract the mod archive anywhere on your PC.</li>
+        <li>Run <code>ZemiInjector.exe</code>.</li>
+        <li>Select the Rocket League process and inject the mod.</li>
+        <li>Launch Rocket League and enjoy the mod features!</li>
+      </ol>
+      <p class="mt-6 text-sm text-gray-400">
+        Need help? Join the 
+        <a href="https://discord.gg/gEt3eJzgVs" target="_blank" class="text-cyan-400 underline">ZemiMod Discord server</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const openBtn = document.getElementById('openSetupGuide');
+    const closeBtn = document.getElementById('closeSetupGuide');
+    const modal = document.getElementById('setupModal');
+
+    openBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+</body>
+</html>
